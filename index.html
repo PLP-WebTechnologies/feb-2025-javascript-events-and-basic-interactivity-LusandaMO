@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lusanda Matiwana - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="about-card">
+        <div class="about-img">
+          <img src="profile.jpg" alt="Lusanda Matiwana Profile Photo">
+        </div>
+        <div class="about-content">
+          <h2 class="color-2">About Me</h2>
+          <p>
+            Hi! I'm <strong>Lusanda Matiwana</strong>, a highly motivated and detail-oriented individual with a strong background in chemical engineering and a growing passion for software development.
+          </p>
+          <p>
+            I hold a <strong>Bachelor of Technology in Chemical Engineering</strong> from Cape Peninsula University of Technology. I'm currently part of the <strong>1 Million Developers for Africa</strong> programme at PLP as a student software developer focused on web development and programming.
+          </p>
+          <p>
+            I'm excited to apply my skills to drive innovation and make a positive impact in the tech industry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h3 class="color-2">Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-emoji">🐍</span>
+          <span class="skill-label">Python</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-emoji">🌐</span>
+          <span class="skill-label">HTML</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-emoji">🎨</span>
+          <span class="skill-label">CSS</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-emoji">🗄️</span>
+          <span class="skill-label">MySQL</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-emoji">🔧</span>
+          <span class="skill-label">Git & GitHub</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-emoji">📱</span>
+          <span class="skill-label">Responsive Design</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-emoji">⚙️</span>
+          <span class="skill-label">Process Design</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+        <h3 class="color-2">Education:</h3>
+        <p>Bachelor of Technology in Chemical Engineering, Cape Peninsula University of Technology (2012-2016)</p>
+        <p><a href="Documents/Lusanda Matiwana CV 2.pdf" class="cv-btn" download>Download My CV</a></p>
+    </section>
+
+    <!-- Interests Section --> 
+    <section id="interests">
+        <h2 class="color-2">Interests</h2>
+        <p>I'm excited about the potential of technology to drive innovation and improve people's lives. My professional interests include:</p>
+        <ul>
+            <li>Artificial Intelligence and Machine Learning</li>
+            <li>Web Development and Design</li>
+            <li>Data Science and Analytics</li>
+            <li>Cybersecurity</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="color-2">Projects</h2>
+        <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <p>A simple personal portfolio website using HTML & CSS.</p>
+            <a href="https://github.com/LusandaMO/personal-portfolio" class="project-btn" target="_blank" type="button">View Project</a>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+      <h2 class="color-2">My Hobbies</h2>
+      <ul class="hobbies-list">
+        <li><span class="hobby-emoji">🏃‍♂️</span> Running & Outdoor Fitness</li>
+        <li><span class="hobby-emoji">📚</span> Reading Inspirational Books</li>
+        <li><span class="hobby-emoji">🎵</span> Listening to Music</li>
+      </ul>
+    </section>
+
+    <!-- Image Gallery/Slideshow -->
+    <section>
+      <h2 class="color-2">Favorite Books To Read</h2>
+      <div class="gallery">
+        <button id="prev-img" class="gallery-btn">&lt;</button>
+        <img id="gallery-img" src="book1.jpg" alt="Gallery Image">
+        <button id="next-img" class="gallery-btn">&gt;</button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="color-2">Get in Touch</h2>
+        <p>If you'd like to collaborate or discuss potential opportunities, please don't hesitate to reach out</p>
+        <form id="contact-form" novalidate>
+            <label>
+                Name:
+                <input type="text" id="name" required>
+                <span class="feedback" id="name-feedback"></span>
+            </label>
+            <label>
+                Email:
+                <input type="email" id="email" required>
+                <span class="feedback" id="email-feedback"></span>
+            </label>
+            <label>
+                Password:
+                <input type="password" id="password" required minlength="8">
+                <span class="feedback" id="password-feedback"></span>
+            </label>
+            <label>
+                Message:
+                <textarea id="message" required></textarea>
+                <span class="feedback" id="message-feedback"></span>
+            </label>
+            <button type="submit" class="main-btn" id="send-btn">Send</button>
+            <p id="form-msg"></p>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Lusanda Matiwana</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

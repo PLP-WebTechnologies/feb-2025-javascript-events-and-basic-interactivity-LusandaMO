@@ -1,0 +1,365 @@
+:root {
+    --color-1: #f0e9e6;
+    --color-2: #e7a47e;
+    --color-3: #f0b58e;
+    --color-4: #cc8666;
+    --color-5: #f0c3ad;
+  }
+  
+  body {
+    background: var(--color-1);
+    color: var(--color-4);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0 1rem;
+  }
+  
+  header {
+    text-align: center;
+    background: var(--color-4);
+    color: var(--color-1);
+    padding: 2rem 0 1rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  h1, h2 {
+    margin: 0.5em 0;
+  }
+  
+  .color-1 { color: var(--color-1);}
+  .color-2 { color: var(--color-2);}
+  .color-3 { color: var(--color-3);}
+  .color-4 { color: var(--color-4);}
+  .color-5 { color: var(--color-5);}
+  
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0 2.5em 0;
+  }
+  .about-card {
+    background: var(--color-5);
+    border-radius: 20px;
+    box-shadow: 0 6px 24px rgba(204, 134, 102, 0.10), 0 1.5px 12px rgba(204, 134, 102, 0.08);
+    display: flex;
+    gap: 2em;
+    padding: 2.5em 2em;
+    max-width: 950px;
+    width: 100%;
+  }
+  .about-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--color-2);
+    background: var(--color-1);
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(204,134,102,0.10);
+  }
+  .about-content h2 {
+    margin-top: 0;
+  }
+  .about-content p {
+    margin: 0.7em 0 0 0;
+    line-height: 1.7;
+    color: var(--color-4);
+    font-size: 1.07em;
+  }
+  @media (max-width: 700px) {
+    .about-card {
+      flex-direction: column;
+      align-items: center;
+      padding: 1.2em;
+      gap: 1em;
+    }
+  }
+  
+  /* Skills Section */
+  #skills {
+    margin: 2.5em 0 2em 0;
+    text-align: center;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.2em;
+    justify-content: center;
+    margin-top: 1.7em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skill-card {
+    background: var(--color-1);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(204, 134, 102, 0.09);
+    padding: 1.1em 0.2em 1em 0.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--color-3);
+    transition: border 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  .skill-card:hover {
+    border: 2px solid var(--color-2);
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 4px 18px rgba(204,134,102,0.18);
+  }
+  .skill-emoji {
+    font-size: 2.2em;
+    margin-bottom: 0.3em;
+  }
+  .skill-label {
+    color: var(--color-4);
+    font-weight: 600;
+    font-size: 1.08em;
+  }
+  
+  /* Download My CV button */
+  #education a.cv-btn {
+    display: inline-block;
+    background: var(--color-3);
+    color: var(--color-1);
+    padding: 0.6em 1.2em;
+    border-radius: 7px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 7px rgba(204, 134, 102, 0.09);
+    margin-top: 0.8em;
+  }
+  #education a.cv-btn:hover {
+    background: var(--color-2);
+    color: var(--color-1);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 6px 18px rgba(231, 164, 126, 0.16);
+  }
+  
+  /* View Project Button */
+  .project-btn {
+    display: inline-block;
+    background: var(--color-3);
+    color: var(--color-1);
+    padding: 0.6em 1.4em;
+    border-radius: 7px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 7px rgba(204, 134, 102, 0.09);
+    margin-top: 0.8em;
+    border: none;
+    cursor: pointer;
+  }
+  .project-btn:focus {
+    outline: none;
+  }
+  .project-btn:hover, .project-btn.clicked {
+    background: var(--color-2);
+    color: var(--color-1);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 6px 18px rgba(231, 164, 126, 0.16);
+  }
+  
+  /* MAIN BUTTONS */
+  .main-btn {
+    background: var(--color-2);
+    border: none;
+    color: var(--color-1);
+    padding: 0.75em 1.5em;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin: 1em 0;
+  }
+  .main-btn:hover, .gallery-btn:hover {
+    background: var(--color-3);
+    transform: scale(1.05);
+  }
+  
+  #event-btn {
+    margin-right: 1em;
+  }
+  
+  #btn-msg {
+    min-height: 1.5em;
+    margin-top: 0.5em;
+  }
+  
+  /* Gallery */
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  .gallery-btn {
+    background: var(--color-4);
+    color: var(--color-1);
+    border: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 1em;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+    #gallery-img {
+      width: 150px;       
+      height: 200px;      
+      object-fit: cover;  
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(204, 134, 102, 0.2);
+      transition: box-shadow 0.3s;
+      display: block;
+    }
+  #gallery-img.animate {
+    animation: pop 0.4s;
+  }
+  @keyframes pop {
+    0% { transform: scale(1);}
+    50% { transform: scale(1.13);}
+    100% { transform: scale(1);}
+  }
+  
+  /* Hobbies List */
+  .hobbies-list {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    align-items: flex-start;
+  }
+  .hobby-emoji {
+    font-size: 1.4em;
+    margin-right: 0.5em;
+  }
+  
+  @media (max-width: 600px) {
+    .hobbies-list {
+      font-size: 1em;
+      gap: 0.5em;
+    }
+  }
+  
+  /* Tabs/Accordion */
+  .tabs {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+  .tab-btn {
+    background: var(--color-5);
+    border: none;
+    padding: 0.5em 1.2em;
+    border-radius: 6px 6px 0 0;
+    color: var(--color-4);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .tab-btn.active {
+    background: var(--color-3);
+    color: var(--color-1);
+  }
+  .tab-content {
+    background: var(--color-1);
+    border: 2px solid var(--color-5);
+    border-radius: 0 0 12px 12px;
+    padding: 1em;
+    min-height: 3em;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 8px rgba(204, 134, 102, 0.05);
+  }
+  
+  /* FORM */
+  form {
+    background: var(--color-5);
+    padding: 1.5em;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 2em auto;
+    box-shadow: 0 4px 14px rgba(204, 134, 102, 0.09);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  form label {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-4);
+    font-weight: 500;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    padding: 0.5em;
+    border: 1.5px solid var(--color-3);
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 0.3em;
+    transition: border-color 0.2s;
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-4);
+  }
+  textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  .feedback {
+    font-size: 0.95em;
+    min-height: 1.2em;
+    margin-left: 0.2em;
+    color: var(--color-4);
+    transition: color 0.2s;
+  }
+  .feedback.valid {
+    color: green;
+  }
+  .feedback.invalid {
+    color: #e74c3c;
+  }
+  #form-msg {
+    min-height: 1.5em;
+    font-weight: bold;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: var(--color-5);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(204, 134, 102, 0.08);
+    padding: 1em 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: var(--color-4);
+    color: var(--color-1);
+    padding: 1em 0;
+    margin-top: 2em;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .gallery {
+      flex-direction: column;
+    }
+    #gallery-img {
+      width: 95vw;
+      height: 55vw;
+      max-width: 98vw;
+      max-height: 60vw;
+    }
+    form {
+      max-width: 98vw;
+    }
+  }
